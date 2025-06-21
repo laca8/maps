@@ -1,6 +1,6 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import type { Location } from '../types/type';
-import { X, MapPin, Users, Globe, Clock, Thermometer } from 'lucide-react';
+import { MapPin, Users, Globe, Clock, Thermometer } from 'lucide-react';
 
 type Props = {
     location: Location

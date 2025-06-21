@@ -1,17 +1,16 @@
-import { TileLayer, useMap, Marker, Popup } from 'react-leaflet'
+import { TileLayer, Marker, Popup } from 'react-leaflet'
 // ✅ Types are available here
 import { MapContainer } from 'react-leaflet'
 import { locationData } from '../data/locations'
-import type { Location } from '../types/type';
-type Props = {}
+
 import { Globe, MapPin } from 'lucide-react'
 import 'leaflet/dist/leaflet.css';
-import L, { Icon, DivIcon } from 'leaflet'
+import L from 'leaflet'
 import { memo, useEffect, useState } from 'react';
 import Loader from './Loader';
 import LocationCard from './LocationCard';
 
-const Map = (props: Props) => {
+const Map = () => {
 
     const [mapReady, setMapReady] = useState(false);
     const [isContinent, setIsContinent] = useState(true);

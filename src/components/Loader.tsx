@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-const Loader = (props: Props) => {
+const Loader = () => {
     return (
         <div className="w-full h-full bg-gradient-to-br from-ocean-deep via-ocean to-ocean-deep rounded-2xl flex items-center justify-center">
             <div className="text-center">
